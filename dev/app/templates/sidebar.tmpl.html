@@ -1,0 +1,11 @@
+<div>
+    <h1> Hello World - {{name}} </h1>
+    <div redFont> This is red font directive </div>
+    <div> <span>Number of Pizzas: {{pizzas.length}}</span> </div>
+    <ul>
+        <li *ngFor="#pizza of pizzas">
+            Pizza name: {{pizza.name}}
+            <h4> {{ pizza.price || 'N/A' }} </h4>
+        </li>
+    </ul>
+</div>
